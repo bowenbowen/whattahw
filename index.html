@@ -1,0 +1,197 @@
+<!-- Code formatter: https://www.freeformatter.com/html-formatter.html#ad-output //-->
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Sky</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Float, float and float">
+      <meta name="author" content="Bowen Shen">
+      <!-- Some basic page information //-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- This 'meta' tag talks to mobile browsers and makes sure the width of everything is set proportionally to the mobile display. //-->
+      <link href="stylesheet.css" rel="stylesheet"/ type="text/css">
+      <!--linked stylesheet //-->
+       
+      <style type="text/css">
+         
+
+         /* Use internal style sheet to style elements that are specific to this page */
+         html {
+         height:400%;
+         /* https://www.w3schools.com/colors/colors_gradient.asp */
+         background: #3f56ff; /* For browsers that do not support gradients */
+         background: linear-gradient(to bottom, #3f56ff 0%, #ffffff 100%); /* Gradient */
+         }
+          
+         .fixed{
+         position: fixed;
+         }
+         #dogParachute{
+         animation: bounceIn 1.5s, sway 2s infinite;
+         display: block;
+         top: 50%;
+         margin:auto;
+         margin-top:-125px;
+         /* Some offset to make the element exactly in the middle */
+         left:0;
+         right:0;
+         }
+         #dogParachute:hover{
+         animation-play-state: paused;
+         /* When mouse hovers over, animation pauses */
+         }
+         #anchorBird{
+         top:40%;
+         left:0;
+         }
+         #anchorCloud{
+         top:50%;
+         left:0;
+         }
+         #anchorFlower{
+         top:60%;
+         left:0;
+         }
+         #anchorBird:hover, #anchorCloud:hover, #anchorFlower:hover{
+         animation: waiting 1.5s infinite;
+         }
+          
+         .absolute{
+         position: absolute;  
+         animation: bounceIn 1.5s;
+         }
+         .absolute:hover{
+         transform: scale(1.2);
+         /* When mouse hovers over, elements get larger */
+         }
+         #bird{
+         top:20%;
+         left:10%;
+         }
+         #cloud1{
+         margin-top:40%;
+         right:20%;
+         }
+         #cloud2{
+         top:100%;
+         left:0;
+         }
+         #plane{
+         top:170%;
+         right:0;   
+         }
+         #plane:hover{
+         transform: scale(1);
+         /* This element causes minor trouble when enlarging. So overwrite the animation. */
+         }
+         #cloud3{
+         top:210%;
+         right:60%; 
+         }
+         #paperPlane{
+         top:250%;
+         left:20%; 
+         }
+         #flower{
+         margin:auto;
+         left:0;
+         right:0;
+         top:400%;
+         margin-top:-60px;
+         /* Make sure this element sticks to the very bottom of page */
+         }
+         #title{
+         color:#3f56ff; 
+         text-decoration:overline;
+         text-shadow: 2px 2px #fff;
+         top:10%;
+         left:20%;
+         }
+         #p2{
+         color: #3f56ff; 
+         left: 3%;
+         top:107%;
+         }
+          
+         @media only screen  and (min-width: 768px) { 
+         #p1{
+         font-size:0.7em;
+         text-align: justify;
+         color: #3f56ff;  
+         line-height:170%;
+         column-count: 2;
+         display:inline-block;
+         width:30%;
+         top:250%;
+         left:50%;
+         }
+         }
+         @media only screen  and (max-width: 768px) { 
+         #p1{
+         font-size:0.7em;
+         text-align: justify;
+         color: #3f56ff;  
+         line-height:170%;
+         column-count: 2;
+         display:inline-block;
+         width:30%;
+         top:250%;
+         left:50%;
+         column-count:1; 
+         }
+         /* If screen is narrow, only use 1 column for p1. Otherwise 2. */ 
+         }
+      </style>
+   </head>
+    
+   <body>
+         <img src="img/sky/dogParachute.svg" alt="dog_parachute" class="fixed" id="dogParachute" width="250"/>
+         <img src="img/sky/bird.svg" alt="bird" width="50" id="bird" class="absolute"/>
+         <img src="img/sky/cloud1.svg" alt="cloud" width="150" id="cloud1" class="absolute"/>
+         <img src="img/sky/cloud2.svg" alt="cloud" width="300vm" id="cloud2" class="absolute"/>
+         <img src="img/sky/cloud3.svg" alt="cloud" width="200" id="cloud3" class="absolute"/>
+         <img src="img/sky/paperPlane.svg" alt="paper plane" width="50" id="paperPlane" class="absolute"/>
+         <img src="img/sky/plane.svg" alt="plane" width="300" id="plane" class="absolute"/>
+       
+         <a href="index1.html" title="take me away">
+         <img src="img/sky/flower.svg" alt="plane" height="60" id="flower" class="absolute"/>
+         </a>
+       
+         <h1 id="title" class="absolute">The Animal Within</h1>
+         <p id="p1" class="absolute">As I glance at the clouds I wonder,
+            If I could escape for a moment,
+            In the body of an elephant,
+            How fun it would be,
+            To carry a prince on my back,
+            Through the jungles of India,
+            His precious jewelry clinging and chiming,
+            With every powerful step I take,
+            Knowing that he could not make it without me.
+            But the clouds change,
+            And I see a wolf,
+            Crouched down as if stalking his prey,
+            And I find the thought,
+            Of ripping food apart,
+            With razor sharp teeth appealing,
+            How powerful a sensation to have the blood of another,
+            Drip from your jaws.
+         </p>
+         <p id="p2" class="absolute"><i>And the wind shifts directions,<br>
+            And I notice the mane of a lion.</i>
+         </p>
+       
+         <div class="anchors">
+            <a href="#bird">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorBird"/>
+            </a>
+            <a href="#cloud3">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorCloud"/>
+            </a>
+            <a href="#flower">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorFlower"/>
+            </a>
+         </div>
+         <!-- Set some anchor points to navigate to different sections on the page //-->
+   </body>
+</html>

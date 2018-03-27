@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Water</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Down, down and down">
+      <meta name="author" content="Bowen Shen">
+      <!-- Some basic page information //-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- This 'meta' tag talks to mobile browsers and makes sure the width of everything is set proportionally to the mobile display. //-->
+      <link href="stylesheet.css" rel="stylesheet"/ type="text/css">
+      <!-- linked stylesheet //-->
+       
+      <style type="text/css">
+         /* Use internal style sheet to style elements that are specific to this page */
+         html {
+         height:400%;
+         /*https://www.w3schools.com/colors/colors_gradient.asp*/
+         background: #3f56ff; /* For browsers that do not support gradients */
+         background: linear-gradient(to top, #3f56ff 0%, #ffffff 100%); /* Standard syntax */
+         }
+          
+         .fixed{
+         position:fixed;
+         }
+         #dogUnderwater{
+         animation:float 5s infinite;
+         display: block;
+         top: 50%;
+         margin:auto;
+         left:0;
+         right:0;
+         }
+         #dogUnderwater:hover{
+         animation-play-state: paused;
+         }
+         #anchorFish{
+         top:40%;
+         left:0;
+         }
+         #anchorSchoolingFish{
+         top:50%;
+         left:0;
+         }
+         #anchorShell{
+         top:60%;
+         left:0;
+         }
+         #anchorFish:hover, #anchorSchoolingFish:hover, #anchorShell:hover{
+         animation: waiting 1.5s infinite;
+         }
+          
+         .absolute{
+         position:absolute;
+         animation: bounceIn 1.5s;
+         }
+         .absolute:hover{
+         transform: scale(1.2);
+         }
+         /* When mouse hovers over, elements get larger */
+         #fish{
+         top:85%;
+         right:10%;
+         } 
+         #rock1{
+         top:150%;
+         left:0;   
+         }
+         #rock2{
+         position: absolute;
+         transform:scale(1);
+         top:400%;
+         right:0;
+         margin:auto;
+         transform:translateY(-100%);
+         }
+         #schoolingFish{
+         top:250%;
+         right:0%;    
+         }
+         #schoolingFish:hover{
+         transform: scale(0.8);
+         }
+         /* When mouse hovers over, elements get smaller. As this element sticks to the right side, it changes the width of page when enlarging. */
+         #seaweed1{
+         animation:sway 3s infinite;
+         top:150%;
+         left:0;    
+         }
+         #seaweed2{
+         animation:sway 3s 1s infinite;
+         top:140%;
+         left:0;    
+         }
+         #seaweed3{
+         animation:sway 3s 2s infinite;
+         top:170%;
+         left:0;      
+         }
+         #shell{
+         margin:auto;
+         left:0;
+         right:0;
+         top:400%;
+         margin-top:-45px;
+         }
+         #title{
+         font-size: 3em;
+         top:50%;
+         right:10%;
+         text-decoration: underline;
+         color:#3f56ff;
+         }
+         #p1{
+         font-size: 0.5em;
+         text-align:right;
+         color:#3f56ff;
+         top:150%;
+         right:10%;  
+         }
+         #p2{
+         position: absolute;
+         font-size: 1.5em;
+         text-align: center;
+         color: white;
+         top:270%;
+         left:0; 
+         right:0;
+         margin:auto;
+         }
+         #p2:hover{
+         transform: scale(0.8);
+         }
+         #p3{
+         position: absolute;
+         font-size: 0.7em;
+         text-align:right;
+         text-decoration: line-through;
+         color: #3f56ff;  
+         top:370%;
+         right:0%;
+         }
+         #p3:hover{
+         transform: scale(0.8);
+         }
+      </style>
+   </head>
+    
+   <body>
+         <img src="img/water/dogUnderwater.svg" alt="dogUnderwater" width="100" id="dogUnderwater" class="fixed"/>
+         <img src="img/water/fish.svg" alt="fish" width="75" id="fish" class="absolute"/>
+         <img src="img/water/rock1.svg" alt="rock" width="200" id="rock1" class="absolute"/>
+         <img src="img/water/rock2.svg" alt="rock" height="60%" id="rock2"/>
+         <!-- rock2 sits at the bottom right corner. If its size changes the page's height and width get disrupted. So remove it from class absolute and give it attribute separately.//-->
+         <img src="img/water/schoolingFish.svg" alt="schooling fish" width="200" id="schoolingFish" class="absolute"/>
+         <img src="img/water/seaweed1.svg" alt="seaweed" width="200" id="seaweed1" class="absolute"/>
+         <img src="img/water/seaweed2.svg" alt="seaweed" width="200" id="seaweed2" class="absolute"/>
+         <img src="img/water/seaweed3.svg" alt="seaweed" width="200" id="seaweed3" class="absolute"/>
+          
+         <a href="index.html" title="take me away">
+         <img src="img/water/shell.svg" alt="shell" height="45" class="absolute" id="shell"/>
+         </a>
+                                                                                           
+         <h1 id="title" class="absolute">The Mistic Ocean</h1>
+         <p id="p1" class="absolute">It's a beautiful the mistic ocean.<br>
+            I‘m intoxicating because a unknown mystery.<br>
+            The Ocean feel as my inside world and <br>
+            the surf break as drops of water.
+         </p>
+         <p id="p2" class="absolute">The soul was <b>very</b> lonely <br>so came to see the Ocean's kept dreamed and<br>
+            It wanted to be similiar to the Ocean.
+         </p>
+         <p id="p3" class="absolute">The wide the Ocean<br> is the native place <br>of everything life<br> very long time ago.<br>
+            At the Ocean <br>my mind is easy <br>fall in love <br>if exist person <br>that well suit to me.
+         </p>
+         <div class="anchors">
+            <a href="#fish">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorFish"/>
+            </a>
+            <a href="#schoolingFish">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorSchoolingFish"/>
+            </a>
+            <a href="#shell">
+            <img src="img/sky/square.svg" alt="anchor" width="20" class="fixed" id="anchorShell"/>
+            </a>
+         </div>
+
+   </body>

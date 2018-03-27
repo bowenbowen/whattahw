@@ -1,0 +1,55 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+    /*web safe fonts: https://websitesetup.org/web-safe-fonts-html-css/*/
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes sway {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(-60%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+@keyframes waiting{
+   0%{
+     transform: translateX(0);
+   }
+   50%{
+     transform: translateX(10px);
+   }
+   100%{
+     transform: translateX(0);
+   }
+}
+/*make some animations that would be used later.
+Some reference to:
+https://robots.thoughtbot.com/css-animation-for-beginners*/
